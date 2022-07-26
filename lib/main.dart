@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/kafeshki_screen.dart';
+import 'screens/loading_screen.dart';
 import 'screens/menu_screen1.dart';
 import 'screens/registration_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: 'RegistrationScreen',
+      initialRoute: 'LoadingScreen',
       routes: {
-        // 'Loadingscreen': (context) => Loadingscreen(),
+        'LoadingScreen': (context) => LoadingScreen(),
         'WelcomeScreen': (context) => WelcomeScreen(),
         'MenuScreen': (context) => MenuScreen(),
         'kafeshkiScreen': (context) => kafeshkiScreen(),
